@@ -11,14 +11,10 @@ perl -MCPAN -e "install LWP::Simple"
 perl -MCPAN -e "install XML::RSS::Parser::Lite"
 
 # make Perl script which downloads bash.org.ru cites executable:
-chmod 755 ~/.bashorg/bashorg.pl
-
-# make shell script bashorg.sh to produce .dat file for fortune, containing the following lines:
-echo "#!/bin/bash" > ~/.bashorg/bashorg.sh
-echo "~/.bashorg/bashorg.pl > ~/.bashorg/bashorg && strfile -s ~/.bashorg/bashorg ~/.bashorg/bashorg.dat" > ~/.bashorg/bashorg.sh
+chmod 755 ~/bashorg/bashorg.pl
 
 # make the script executable
-chmod 755 ~/.bashorg/bashorg.sh
+chmod 755 ~/bashorg/bashorg.sh
 
 # add the following line to ~/.bashrc:
-echo "~/.bashorg/bashorg.sh && fortune ~/.bashorg" > ~/.bashrc
+echo "~/bashorg/bashorg.sh && fortune ~/bashorg" > ~/.bashrc
