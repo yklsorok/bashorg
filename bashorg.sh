@@ -1,2 +1,4 @@
 #!/bin/bash
-~/bashorg/bashorg.pl > ~/bashorg/bashorg && strfile -s ~/bashorg/bashorg ~/bashorg/bashorg.dat
+if [ ! -f ~/bashorg/bashorg.dat ]; then
+  ~/bashorg/bashorg.pl > ~/bashorg/bashorg && strfile -s ~/bashorg/bashorg ~/bashorg/bashorg.dat
+fi
