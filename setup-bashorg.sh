@@ -29,4 +29,4 @@ chmod 755 ~/bashorg/bashorg.pl
 chmod 755 ~/bashorg/bashorg.sh
 
 # add the following line to ~/.bashrc:
-echo "~/bashorg/bashorg.sh && fortune ~/bashorg" > ~/.bashrc
+echo "~/bashorg/bashorg.sh && fortune ~/bashorg" >> ~/.bashrc
