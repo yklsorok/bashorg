@@ -2,7 +2,7 @@
 use strict;
 use XML::RSS::Parser::Lite;
 use LWP::UserAgent;
-#use encoding "utf-8";
+use encoding "utf-8";
 
 my $ua = LWP::UserAgent->new();
 my $data = $ua->get("http://bash.im/rss");
